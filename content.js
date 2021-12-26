@@ -74,11 +74,9 @@ if(isdark){
 }
 var scriptTag = document.createElement('script');
 scriptTag.src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js";
-console.log("1");
 scriptTag.onload = function () {
     let sc = document.createElement('script');
     sc.innerHTML = `hljs.highlightAll();`;
     document.querySelector("body").append(sc);
 };
-console.log("2");
 document.querySelector("body").append(scriptTag);
